@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
+import logo from "../../public/logo.png";
 
 export default function Header() {
     return (
        
         <div className="header">
-        <Image src="/logo.png" alt="Logo" className= "logo"/>
+        <Image src={logo} alt="Logo" className= "logo"/>
             <ul className="navList">
                 <li className="navItem">
                     <Link href="/" className="navLink">Home</Link>
